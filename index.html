@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continuous Video Call</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header>
+      <h1>Continuous Video Call</h1>
+      <p>No built-in time limit</p>
+    </header>
+
+    <section class="videos">
+
+      <div class="video-card">
+        <span>You</span>
+        <video
+          id="localVideo"
+          autoplay
+          muted
+          playsinline>
+        </video>
+      </div>
+
+      <div class="video-card">
+        <span>Remote</span>
+        <video
+          id="remoteVideo"
+          autoplay
+          playsinline>
+        </video>
+      </div>
+
+    </section>
+
+    <section class="controls">
+
+      <input
+        id="room"
+        type="text"
+        value="my-room"
+        placeholder="Room name">
+
+      <button id="join">
+        Join Call
+      </button>
+
+      <button id="leave">
+        Leave
+      </button>
+
+      <button id="mute">
+        Mute
+      </button>
+
+      <button id="camera">
+        Camera Off
+      </button>
+
+    </section>
+
+    <p id="status">
+      Ready
+    </p>
+
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+    </html>
