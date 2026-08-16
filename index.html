@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
   >
 
   <title>ATX MEETER</title>
+
+  <meta
+    name="description"
+    content="ATX MEETER - Meet strangers through random video calls."
+  >
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -27,6 +33,7 @@
 
     <section class="videos">
 
+      <!-- Your camera -->
       <div class="video-card">
 
         <span>You</span>
@@ -41,6 +48,7 @@
       </div>
 
 
+      <!-- Stranger's camera -->
       <div class="video-card">
 
         <span>Stranger</span>
@@ -58,24 +66,33 @@
 
     <section class="controls">
 
+      <!-- Start random matchmaking -->
       <button
         id="start"
         class="primary">
         Start Random Call
       </button>
 
-      <button id="skip">
+
+      <!-- Find another person -->
+      <button id="next">
         ꜱᴋɪᴩ
       </button>
 
+
+      <!-- Microphone -->
       <button id="mute">
         Mute
       </button>
 
+
+      <!-- Camera -->
       <button id="camera">
         Camera Off
       </button>
 
+
+      <!-- Stop call -->
       <button
         id="stop"
         class="danger">
@@ -85,6 +102,7 @@
     </section>
 
 
+    <!-- Connection status -->
     <p id="status">
       Ready. Tap Start Random Call.
     </p>
