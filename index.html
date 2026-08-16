@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Continuous Video Call</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Random Video Call</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -12,47 +17,55 @@
   <main class="app">
 
     <header>
-      <h1>Continuous Video Call</h1>
-      <p>No built-in time limit</p>
+      <h1>Random Video Call</h1>
+
+      <p>
+        Meet someone new automatically.
+      </p>
     </header>
+
 
     <section class="videos">
 
       <div class="video-card">
+
         <span>You</span>
+
         <video
           id="localVideo"
           autoplay
           muted
           playsinline>
         </video>
+
       </div>
 
+
       <div class="video-card">
-        <span>Remote</span>
+
+        <span>Stranger</span>
+
         <video
           id="remoteVideo"
           autoplay
           playsinline>
         </video>
+
       </div>
 
     </section>
 
+
     <section class="controls">
 
-      <input
-        id="room"
-        type="text"
-        value="my-room"
-        placeholder="Room name">
-
-      <button id="join">
-        Join Call
+      <button
+        id="start"
+        class="primary">
+        Start Random Call
       </button>
 
-      <button id="leave">
-        Leave
+      <button id="next">
+        Next Person
       </button>
 
       <button id="mute">
@@ -63,15 +76,23 @@
         Camera Off
       </button>
 
+      <button
+        id="stop"
+        class="danger">
+        Stop
+      </button>
+
     </section>
 
+
     <p id="status">
-      Ready
+      Ready. Tap Start Random Call.
     </p>
 
   </main>
 
+
   <script src="app.js"></script>
 
 </body>
-    </html>
+  </html>
