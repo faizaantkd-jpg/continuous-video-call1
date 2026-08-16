@@ -16,7 +16,7 @@ let cameraOff = false;
 
 // Change this to your deployed WebSocket signaling server.
 // The signaling server only exchanges SDP/ICE messages; media remains WebRTC peer-to-peer.
-const SIGNALING_URL = "wss://YOUR-SIGNALING-SERVER.example/ws";
+const SIGNALING_SERVER ="wss://continuous-video-call-server.onrender.com";
 
 const rtcConfig = {
   iceServers: [
